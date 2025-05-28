@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+
+<body>
+    <p>Tags de texto</p>
+
+    <p>Títulos "H1" a H6"</p>
+    <h1>Título em H1</h1>
+    <h2>Título em H2</h2>
+    <h3>Título em H3</h3>
+    <h4>Título em H4</h4>
+    <h5>Título em H5</h5>
+    <h6>Título em H6</h6>
+
+    <p>Tipos de texto</p>
+    <strong>Texto em negrito</strong>
+    <br> <!-- Pula linha -->
+    <em>Texto em italico</em>
+    <br>
+    <!-- Tags reduzidas -->
+    <b>Texto em negrito</b>
+    <br>
+    <i>Texto em italico</i>
+
+    <p>Hyper link -> Link</p>
+    <a href="https://WWW.google.com.br">Link para google</a>
+    <br>
+    <a href="https://WWW.google.com.br" target="_blank">Link para google - Nova Aba</a>
+
+
+    <p>Tags de Lista</p>
+    <b>Lista Ordenada</b>
+    <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item
+            <ul>
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ul>
+        </li>
+    </ol>
+    <b>Lista não Ordenada</b>
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03
+            <ol>
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ol>
+        </li>
+    </ul>
+    <b>Lista de Descrição</b>
+    <dl>
+        <dt>Comida</dt>
+        <dd>Chocolate</dd>
+        <dd>Arroz e Feijão</dd>
+        <dd>Frutas</dd>
+
+        <dt>Produtos de Limpeza</dt>
+        <dd>Detergente</dd>
+        <dd>Desinfetante</dd>
+        <dd>Sapolio</dd>
+    </dl>
+
+    <p>Imagens</p>
+    <img src="C:\Users\otavio_neves\Documents\HTML\senai.png" alt="Logo do senai" width="200px" height="100px" />
+    <br>
+    <img src="senai.png" alt="Logo do senai" width="200px" height="100px" />
+    <br>
+    <img src="https://cursinhoparaetec.com.br/wp-content/uploads/2024/03/SENAI_Sao_Paulo_logo.png" alt="Logo do senai"
+        width="200px" height="100px">
+
+    <figure>
+        <img src="senai.png" width="200px" height="100px">
+        <figcaption>Logo do Senai</figcaption>
+    </figure>
+
+
+    <p>Tabelas</p>
+    <table>
+        <caption>Explicação de tabelas</caption>
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item A1</td>
+                <td>Item B1</td>
+                <td>Item C1</td>
+            </tr>
+
+            <tr>
+                <td>Item A2</td>
+                <td>Item B2</td>
+                <td>Item C2</td>
+            </tr>
+
+            <tr>
+                <td>Item A3</td>
+                <td>Item B3</td>
+                <td>Item C3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    Fim da tabela
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Formulário</p>
+    <form>
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <label for="Nome">Nome: </label>
+            <input type="text" name="Nome" placeholder="Digite o seu nome" required>
+            <br>
+            <label for="Senha">Senha: </label>
+            <input type="password" name="Senha" placeholder="Digite a sua senha" required>
+            <br>
+            <label for="Email">Email: </label>
+            <input type="email" name="Email" placeholder="Digite o seu email" required>
+            <br>
+            <label for="Idade">Idade: </label>
+            <input type="number" name="Idade" placeholder="Digite a sua idade" min="1" max="120" required>
+        </fieldset>
+        <fieldset>
+            <legend>Sugestões</legend>
+            <label for="opiniao">Sua opinião</label>
+            <textarea name="opiniao" placeholder="Digite sua opinião"></textarea>
+            <label for="avaliacao">Nós avalie:</label>
+            <select name="avaliacao">
+                <option value="">Selecione</option>
+                <option value="Otimo">Ótimo</option>
+                <option value="Bom">Bom</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+                <option value="Muito Ruim">Muito Ruim</option>
+            </select>
+
+            <p>Avaliação com radio</p>
+            <label for="Bom">Bom </label>
+            <input type="radio" name="ava" value="Bom">
+            <label for="Regular">Regular </label>
+            <input type="radio" name="ava" value="Regular">
+            <label for="Ruim">Ruim</label>
+            <input type="radio" name="ava" value="Ruim">
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
